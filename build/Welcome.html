@@ -82,9 +82,43 @@ h1 {
     color: #a6e22e;
 }
         </style>
-		%svelte.head%
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/greedy-pig/_app/assets/pages/Welcome.svelte-d46245c6.css">
+	<link rel="modulepreload" href="/greedy-pig/_app/start-11e5c30f.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/chunks/index-eea98cb7.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/layout.svelte-cbf7d06a.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/pages/Welcome.svelte-c861caf3.js">
 	</head>
 	<body>
-		%svelte.body%
+		
+
+
+<main class="svelte-12ect43"><h1>Greedy Pig</h1>
+    <div class="buttonwrapper svelte-12ect43"><button class="svelte-12ect43">Begin game</button></div>
+    <div class="buttonwrapper svelte-12ect43"><button class="svelte-12ect43">Rules</button></div>
+</main>
+
+
+		<script type="module" data-hydrate="1h5dqqa">
+		import { start } from "/greedy-pig/_app/start-11e5c30f.js";
+		start({
+			target: document.querySelector('[data-hydrate="1h5dqqa"]').parentNode,
+			paths: {"base":"/greedy-pig","assets":"/greedy-pig"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/greedy-pig/_app/layout.svelte-cbf7d06a.js"),
+						import("/greedy-pig/_app/pages/Welcome.svelte-c861caf3.js")
+				],
+				params: {},
+				routeId: "Welcome"
+			}
+		});
+	</script>
 	</body>
 </html>

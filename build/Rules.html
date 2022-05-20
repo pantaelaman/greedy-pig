@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #f1f2f3;
+    font-family: sans-serif;
+}
+
+* {
+    user-select: none;
+}
+
+body {
+	color: #333;
+	margin: 0;
+	padding: 8px;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: #f1f2f3;
+	background-color: #4f6164;
+    border: 2px solid #42464c;
+}
+
+button:disabled {
+	color: #999;
+}
+
+main {
+    background-color: #222a28;
+    color: #f1f2f3;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: #a6e22e;
+}
+        </style>
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/greedy-pig/_app/assets/pages/Rules.svelte-94593219.css">
+	<link rel="modulepreload" href="/greedy-pig/_app/start-11e5c30f.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/chunks/index-eea98cb7.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/layout.svelte-cbf7d06a.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/pages/Rules.svelte-4dc86890.js">
+	</head>
+	<body>
+		
+
+
+<button class="backbutton svelte-acw8nq">Back</button>
+<main class="svelte-acw8nq"><h1>Greedy Pig</h1>
+    <ol class="svelte-acw8nq"><li>The game is played with 4 players and a die.</li>
+        <li>There are 5 rounds.</li>
+        <li>A round ends when either:
+            <ul><li>every player has left, or</li>
+                <li>a 4 is rolled on the die (called a &quot;Greedy Pig&quot;)</li></ul>
+            After a round ends, all players who left that round return to play.
+        </li>
+        <li>At the end of all 5 rounds, the player(s) with the highest score win.</li>
+        <li>At the start of the game, the die is rolled. All players add the die&#39;s value to their score,
+            unless the die&#39;s value is a four, in which case all players who have not yet left the round
+            lose any points they gained that round, and, per rule 3, the round ends, and all players
+            become active again.
+        </li>
+        <li>After the die is rolled, any number of players can choose to leave the round. Per rule 3,
+            if every player leaves or has left, the round ends, and all players become active again.
+        </li>
+        <li>Once everyone is happy with their decision to stay in or leave, the die is rolled again and
+            the process started over again until the end of the 5th round.
+        </li></ol>
+</main>
+
+
+		<script type="module" data-hydrate="1d53b03">
+		import { start } from "/greedy-pig/_app/start-11e5c30f.js";
+		start({
+			target: document.querySelector('[data-hydrate="1d53b03"]').parentNode,
+			paths: {"base":"/greedy-pig","assets":"/greedy-pig"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/greedy-pig/_app/layout.svelte-cbf7d06a.js"),
+						import("/greedy-pig/_app/pages/Rules.svelte-4dc86890.js")
+				],
+				params: {},
+				routeId: "Rules"
+			}
+		});
+	</script>
+	</body>
+</html>
