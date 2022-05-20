@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #f1f2f3;
+    font-family: sans-serif;
+}
+
+* {
+    user-select: none;
+}
+
+body {
+	color: #333;
+	margin: 0;
+	padding: 8px;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: #f1f2f3;
+	background-color: #4f6164;
+    border: 2px solid #42464c;
+}
+
+button:disabled {
+	color: #999;
+}
+
+main {
+    background-color: #222a28;
+    color: #f1f2f3;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: #a6e22e;
+}
+        </style>
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/greedy-pig/_app/assets/pages/Welcome.svelte-d46245c6.css">
+	<link rel="modulepreload" href="/greedy-pig/_app/start-71a3c449.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/chunks/index-eea98cb7.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/layout.svelte-cbf7d06a.js">
+	<link rel="modulepreload" href="/greedy-pig/_app/pages/Welcome.svelte-c861caf3.js">
+	</head>
+	<body>
+		
+
+
+<main class="svelte-12ect43"><h1>Greedy Pig</h1>
+    <div class="buttonwrapper svelte-12ect43"><button class="svelte-12ect43">Begin game</button></div>
+    <div class="buttonwrapper svelte-12ect43"><button class="svelte-12ect43">Rules</button></div>
+</main>
+
+
+		<script type="module" data-hydrate="1h5dqqa">
+		import { start } from "/greedy-pig/_app/start-71a3c449.js";
+		start({
+			target: document.querySelector('[data-hydrate="1h5dqqa"]').parentNode,
+			paths: {"base":"/greedy-pig","assets":"/greedy-pig"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/greedy-pig/_app/layout.svelte-cbf7d06a.js"),
+						import("/greedy-pig/_app/pages/Welcome.svelte-c861caf3.js")
+				],
+				params: {},
+				routeId: "Welcome"
+			}
+		});
+	</script>
+	</body>
+</html>
